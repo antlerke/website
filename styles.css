@@ -412,6 +412,12 @@ a {
     text-align: center;
 }
 
+/* Mobile: white text on photo bg */
+.hero-cta .hero-footer {
+    color: rgba(255,255,255,0.8);
+    text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+}
+
 /* Tablet: two-panel */
 @media (min-width: 600px) and (max-width: 1023px) {
     .hero { background: none; }
@@ -447,8 +453,16 @@ a {
     .hero-description { font-size: 0.688rem; }
     .hero-features li { color: var(--text-primary); font-size: 0.875rem; text-shadow: none; }
     .hero-features li::before { display: inline; content: '\2014'; margin-right: 0.5rem; color: var(--tiffany); }
-    .hero-cta { padding-top: var(--space-md); }
-    .hero-footer { color: var(--text-secondary); }
+    .hero-cta { margin-top: var(--space-md); padding-top: 0; text-align: center; }
+    .hero-cta .hero-footer { color: var(--text-secondary); text-shadow: none; }
+    .hero-photo-col::after {
+        content: '';
+        position: absolute;
+        top: 0; bottom: 0; left: 0;
+        width: 80px;
+        background: linear-gradient(to right, #F4F5F3, transparent);
+        pointer-events: none;
+    }
 }
 
 /* Desktop: two-panel */
@@ -499,8 +513,16 @@ a {
     .hero-description { font-size: 0.688rem; color: var(--tiffany); margin-bottom: var(--space-sm); }
     .hero-features li { color: var(--text-primary); font-size: 0.875rem; text-shadow: none; }
     .hero-features li::before { display: inline; content: '\2014'; margin-right: 0.5rem; color: var(--tiffany); }
-    .hero-cta { padding-top: var(--space-md); }
-    .hero-footer { color: var(--text-secondary); }
+    .hero-cta { margin-top: var(--space-lg); padding-top: 0; text-align: center; }
+    .hero-cta .hero-footer { color: var(--text-secondary); text-shadow: none; }
+    .hero-photo-col::after {
+        content: '';
+        position: absolute;
+        top: 0; bottom: 0; left: 0;
+        width: 120px;
+        background: linear-gradient(to right, #F4F5F3, transparent);
+        pointer-events: none;
+    }
 }
 
 
@@ -549,7 +571,7 @@ a {
 .hero-footer {
     margin-top: var(--space-md);
     font-size: 0.813rem;
-    color: rgba(255,255,255,0.7);
+    color: var(--text-secondary);
     letter-spacing: 0.02em;
 }
 
