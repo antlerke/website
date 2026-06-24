@@ -808,3 +808,135 @@ button:focus-visible {
     outline: 2px solid var(--tiffany);
     outline-offset: 2px;
 }
+
+/* ==========================================
+   PHOTO BACKGROUNDS & SMOOTH TRANSITIONS
+   ========================================== */
+
+/* Shared settings for all photo sections */
+.hero,
+.section.about-section,
+.section.inside-section,
+.section.why-section,
+.section.bonuses-section,
+.section.access-section,
+.section.support-section,
+.section.final-section {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: var(--bg-main);
+}
+
+/* Reset alternating background that would override */
+.section.about-section,
+.section.inside-section,
+.section.why-section,
+.section.bonuses-section,
+.section.access-section,
+.section.support-section,
+.section.final-section {
+    background-color: var(--bg-main);
+}
+
+/* Hero — dynamic pose by the sea */
+.hero {
+    background-image:
+        linear-gradient(to bottom,
+            rgba(244,245,243,0.80) 0%,
+            rgba(244,245,243,0.80) 78%,
+            #F4F5F3 100%),
+        url('images/EmptyName-10.webp');
+}
+
+/* About — luxury lifestyle with Chanel accessories */
+.section.about-section {
+    background-image:
+        linear-gradient(to bottom,
+            #F4F5F3 0%,
+            rgba(244,245,243,0.82) 10%,
+            rgba(244,245,243,0.82) 78%,
+            #F4F5F3 100%),
+        url('images/EmptyName-14.webp');
+}
+
+/* Inside — reading a book (ідеально для секції "Що всередині") */
+.section.inside-section {
+    background-image:
+        linear-gradient(to bottom,
+            #F4F5F3 0%,
+            rgba(244,245,243,0.82) 10%,
+            rgba(244,245,243,0.82) 78%,
+            #F4F5F3 100%),
+        url('images/EmptyName-5.webp');
+}
+
+/* Why — confident Chanel pose */
+.section.why-section {
+    background-image:
+        linear-gradient(to bottom,
+            #F4F5F3 0%,
+            rgba(244,245,243,0.82) 10%,
+            rgba(244,245,243,0.82) 78%,
+            #F4F5F3 100%),
+        url('images/EmptyName-1.webp');
+}
+
+/* Bonuses — relaxed poolside */
+.section.bonuses-section {
+    background-image:
+        linear-gradient(to bottom,
+            #F4F5F3 0%,
+            rgba(244,245,243,0.82) 10%,
+            rgba(244,245,243,0.82) 78%,
+            #F4F5F3 100%),
+        url('images/EmptyName-2.webp');
+}
+
+/* Access — contemplative pose with book */
+.section.access-section {
+    background-image:
+        linear-gradient(to bottom,
+            #F4F5F3 0%,
+            rgba(244,245,243,0.82) 10%,
+            rgba(244,245,243,0.82) 78%,
+            #F4F5F3 100%),
+        url('images/EmptyName-4.webp');
+}
+
+/* Support — elegant detail shot */
+.section.support-section {
+    background-image:
+        linear-gradient(to bottom,
+            #F4F5F3 0%,
+            rgba(244,245,243,0.82) 10%,
+            rgba(244,245,243,0.82) 78%,
+            #F4F5F3 100%),
+        url('images/EmptyName-8.webp');
+    background-position: center center;
+}
+
+/* Final CTA — strong editorial shot, fades into dark footer */
+.section.final-section {
+    background-image:
+        linear-gradient(to bottom,
+            #F4F5F3 0%,
+            rgba(244,245,243,0.82) 10%,
+            rgba(244,245,243,0.82) 78%,
+            #2C2C2C 100%),
+        url('images/EmptyName-16.webp');
+}
+
+/* Parallax on desktop — disabled on touch/iOS */
+@media (hover: hover) and (min-width: 769px) {
+    .hero,
+    .section.about-section,
+    .section.inside-section,
+    .section.why-section,
+    .section.bonuses-section,
+    .section.access-section,
+    .section.support-section,
+    .section.final-section {
+        background-attachment: fixed;
+    }
+}
