@@ -1028,18 +1028,17 @@ button:focus-visible {
     background-color: #1a1a1a;
 }
 
-/* Hero: gradient left-to-right — light on left (text), photo visible on right (model) */
+/* Hero: gradient left-to-right — light on left (text area), photo visible on right (model) */
 .hero {
     background-image:
         linear-gradient(to right,
-            rgba(244,245,243,0.90) 0%,
-            rgba(244,245,243,0.82) 30%,
-            rgba(244,245,243,0.32) 52%,
+            rgba(244,245,243,0.92) 0%,
+            rgba(244,245,243,0.85) 30%,
+            rgba(244,245,243,0.35) 52%,
             rgba(244,245,243,0.08) 68%,
             rgba(244,245,243,0.0) 85%),
         url('images/EmptyName-10.webp');
-    background-size: 100% 100%, 120% auto;
-    background-position: 0 0, 15% top;
+    background-position: center top;
 }
 
 /* Про гайд + Що всередині — одна підкладинка */
