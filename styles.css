@@ -928,16 +928,8 @@ button:focus-visible {
     background-position: center top;
 }
 
-.section.about-section {
-    background-image:
-        linear-gradient(to bottom,
-            rgba(244,245,243,0.35) 0%,
-            rgba(244,245,243,0.15) 15%,
-            rgba(244,245,243,0.15) 78%,
-            rgba(244,245,243,0.35) 100%),
-        url('images/EmptyName-14.webp');
-}
-
+/* Про гайд + Що всередині — одна підкладинка */
+.section.about-section,
 .section.inside-section {
     background-image:
         linear-gradient(to bottom,
@@ -980,17 +972,8 @@ button:focus-visible {
     background-position: center top;
 }
 
-.section.support-section {
-    background-image:
-        linear-gradient(to bottom,
-            rgba(244,245,243,0.35) 0%,
-            rgba(244,245,243,0.15) 15%,
-            rgba(244,245,243,0.15) 78%,
-            rgba(244,245,243,0.35) 100%),
-        url('images/EmptyName-8.webp');
-    background-position: center bottom;
-}
-
+/* Не отримали посилання + Фінальний CTA — одна підкладинка */
+.section.support-section,
 .section.final-section {
     background-image:
         linear-gradient(to bottom,
