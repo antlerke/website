@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * { animation: none !important; transition: none !important; }
+        html, body { margin: 0; padding: 0; overflow: hidden; }
+        .hero-cta { display: none !important; }
+
+        /* Photo panel: hidden by default (mobile) */
+        .hero-photo-col { display: none; }
+
+        /* =============================================
+           DESKTOP + TABLET: absolute two-panel layout
+           Text panel left | Photo panel right
+        ============================================= */
+        @media (min-width: 600px) {
+            .hero {
+                background: none !important;
+                position: relative !important;
+                display: block !important;
+                height: 100vh;
+                min-height: 100vh;
+                padding: 0 !important;
+                overflow: hidden;
+            }
+
+            /* Photo panel: absolutely fills right side */
+            .hero-photo-col {
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background-image: url('images/EmptyName-10.webp');
+                background-size: cover;
+                background-attachment: scroll;
+            }
+
+            /* Text panel: absolutely fills left side */
+            .hero-content {
+                position: absolute !important;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                background: var(--bg-main);
+                max-width: none !important;
+                animation: none !important;
+                display: flex !important;
+                flex-direction: column;
+                justify-content: flex-start;
+                overflow: hidden;
+                box-sizing: border-box;
+            }
+
+            .hero-badge { text-align: left !important; }
+
+            .hero-mid {
+                display: block !important;
+                max-width: 100% !important;
+            }
+
+            .hero-left { margin-bottom: 1.2rem; }
+        }
+
+        /* Desktop sizing */
+        @media (min-width: 1024px) {
+            .hero-photo-col {
+                left: 43%;
+                background-position: center 30%;
+            }
+            .hero-content {
+                width: 43% !important;
+                padding: 7vh 3.5rem 3rem !important;
+            }
+            .hero-title {
+                font-size: clamp(2.5rem, 4.8vw, 7rem) !important;
+                line-height: 0.88 !important;
+                margin-bottom: var(--space-lg) !important;
+            }
+            .hero-badge {
+                margin-bottom: var(--space-md) !important;
+            }
+        }
+
+        /* Tablet sizing */
+        @media (min-width: 600px) and (max-width: 1023px) {
+            .hero-photo-col {
+                left: 47%;
+                background-position: center top;
+            }
+            .hero-content {
+                width: 47% !important;
+                padding: 6vh 2rem 2rem !important;
+            }
+            .hero-title {
+                font-size: clamp(1.8rem, 5.2vw, 3.5rem) !important;
+                line-height: 0.88 !important;
+                margin-bottom: 1.5rem !important;
+            }
+            .hero-badge {
+                margin-bottom: 1rem !important;
+            }
+        }
+
+        /* =============================================
+           MOBILE: full-bleed bg photo + text contrast
+        ============================================= */
+        @media (max-width: 599px) {
+            .hero {
+                background-attachment: scroll !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+            .hero-content {
+                padding: 0 1rem !important;
+                overflow: hidden !important;
+                box-sizing: border-box !important;
+                width: 100% !important;
+            }
+            .hero-title {
+                font-size: clamp(1.8rem, 10vw, 3rem) !important;
+                margin-bottom: 1rem !important;
+                /* Subtle shadow so light letters show on light photo bg */
+                text-shadow: 0 2px 12px rgba(0,0,0,0.15) !important;
+            }
+            .hero-mid {
+                grid-template-columns: 1fr !important;
+                max-width: 100% !important;
+            }
+            .hero-badge {
+                margin-bottom: 0.75rem !important;
+            }
+            /* Shrink description so it fits without overflow */
+            .hero-description {
+                font-size: 0.6rem !important;
+                letter-spacing: 0.05em !important;
+                white-space: normal !important;
+                word-wrap: break-word !important;
+                overflow-wrap: break-word !important;
+            }
+            /* Smaller features list to fit mobile width */
+            .hero-features {
+                font-size: 0.72rem !important;
+                padding-left: 0 !important;
+                word-break: break-word !important;
+            }
+            .hero-features li {
+                white-space: normal !important;
+                word-wrap: break-word !important;
+                overflow-wrap: break-word !important;
+                word-break: break-word !important;
+            }
+            .hero-features li::before {
+                display: none !important;
+            }
+            /* White text with shadow on dark swimsuit */
+            .hero-subtitle,
+            .hero-description,
+            .hero-features,
+            .hero-features li {
+                color: #ffffff !important;
+                text-shadow: 0 1px 8px rgba(0,0,0,0.6) !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <!-- Right panel: photo (desktop/tablet only) -->
+        <div class="hero-photo-col" aria-hidden="true"></div>
+
+        <!-- Left panel: text content -->
+        <div class="hero-content">
+            <div class="hero-badge">HOT SUMMER EDITION</div>
+            <h1 class="hero-title">
+                <span class="title-word">БАЗОВИЙ</span>
+                <span class="title-word">ГАРДЕРОБ</span>
+            </h1>
+            <div class="hero-mid">
+                <div class="hero-left">
+                    <p class="hero-subtitle">BY POLINA TSEPUKH<br>& STDSTYLING</p>
+                </div>
+                <div class="hero-right">
+                    <p class="hero-description">ТВІЙ ІДЕАЛЬНИЙ ГАРДЕРОБ FOR SUMMER 2026:</p>
+                    <ul class="hero-features">
+                        <li>Головні тренди літа 2026</li>
+                        <li>Базові речі для капсульного гардеробу</li>
+                        <li>Усі артикули в одному гайді</li>
+                        <li>Ексклюзивні подарунки та знижки</li>
+                        <li>20 готових стилізацій від Поліни</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="height: 80px;"></div>
+        </div>
+    </section>
+</body>
+</html>

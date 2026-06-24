@@ -287,13 +287,19 @@ a {
 
 .hero {
     min-height: 100vh;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 9vh var(--space-md) var(--space-2xl);
-    background: linear-gradient(180deg, #F4F5F3 0%, #F8F8F6 100%);
     position: relative;
     overflow: hidden;
+}
+
+.hero-picture {
+    display: block;
+    width: 100%;
+}
+
+.hero-picture img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .hero-content {
@@ -343,9 +349,12 @@ a {
 }
 
 .hero-cta {
+    position: absolute;
+    bottom: var(--space-2xl);
+    left: 0;
+    right: 0;
     text-align: center;
-    margin-top: var(--space-xl);
-    max-width: 1100px;
+    z-index: 2;
 }
 
 .hero-left {
@@ -1028,17 +1037,7 @@ button:focus-visible {
     background-color: #1a1a1a;
 }
 
-/* Overlay: мінімальний — фото дихає, текст читається через text-shadow */
-.hero {
-    background-image:
-        linear-gradient(to bottom,
-            rgba(244,245,243,0.25) 0%,
-            rgba(244,245,243,0.15) 35%,
-            rgba(244,245,243,0.15) 70%,
-            rgba(244,245,243,0.35) 100%),
-        url('images/EmptyName-10.webp');
-    background-position: center top;
-}
+/* Hero uses static <picture> images — no CSS background needed */
 
 /* Про гайд + Що всередині — одна підкладинка */
 .section.about-section,
@@ -1099,7 +1098,6 @@ button:focus-visible {
 
 /* Parallax on desktop — disabled on touch/iOS */
 @media (hover: hover) and (min-width: 769px) {
-    .hero,
     .section.about-section,
     .section.inside-section,
     .section.why-section,
