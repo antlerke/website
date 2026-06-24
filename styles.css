@@ -3,33 +3,48 @@
    /polish: Design Language & Premium Motion
    ========================================== */
 
-/* Cy Grotesk Grand — додай файли у папку fonts/ і розкоментуй */
-/*
 @font-face {
     font-family: 'Cy Grotesk Grand';
-    src: url('fonts/CyGroteskGrand-Regular.woff2') format('woff2'),
-         url('fonts/CyGroteskGrand-Regular.woff') format('woff');
+    src: url('fonts/CyGroteskGrand-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Cy Grotesk Grand';
+    src: url('fonts/CyGroteskGrand-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Cy Grotesk Grand';
+    src: url('fonts/CyGroteskGrand-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Cy Grotesk Grand';
-    src: url('fonts/CyGroteskGrand-Medium.woff2') format('woff2'),
-         url('fonts/CyGroteskGrand-Medium.woff') format('woff');
+    src: url('fonts/CyGroteskGrand-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Cy Grotesk Grand';
-    src: url('fonts/CyGroteskGrand-Bold.woff2') format('woff2'),
-         url('fonts/CyGroteskGrand-Bold.woff') format('woff');
+    src: url('fonts/CyGroteskGrand-Bold.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
-*/
+@font-face {
+    font-family: 'Cy Grotesk Grand';
+    src: url('fonts/CyGroteskGrand-Dark.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
 
 /* Root Variables - Soft Luxury Palette */
 :root {
@@ -43,8 +58,8 @@
     --border: #DADFDA;
     --text-dark: #2C2C2C;
 
-    /* Typography — замінити на 'Cy Grotesk Grand' після додавання файлів */
-    --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    /* Typography */
+    --font-main: 'Cy Grotesk Grand', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --letter-spacing: 0.05em;
     
     /* Spacing */
