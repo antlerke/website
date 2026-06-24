@@ -3,6 +3,34 @@
    /polish: Design Language & Premium Motion
    ========================================== */
 
+/* Cy Grotesk Grand — додай файли у папку fonts/ і розкоментуй */
+/*
+@font-face {
+    font-family: 'Cy Grotesk Grand';
+    src: url('fonts/CyGroteskGrand-Regular.woff2') format('woff2'),
+         url('fonts/CyGroteskGrand-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Cy Grotesk Grand';
+    src: url('fonts/CyGroteskGrand-Medium.woff2') format('woff2'),
+         url('fonts/CyGroteskGrand-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Cy Grotesk Grand';
+    src: url('fonts/CyGroteskGrand-Bold.woff2') format('woff2'),
+         url('fonts/CyGroteskGrand-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+*/
+
 /* Root Variables - Soft Luxury Palette */
 :root {
     --bg-main: #F4F5F3;
@@ -14,8 +42,8 @@
     --white: #FFFFFF;
     --border: #DADFDA;
     --text-dark: #2C2C2C;
-    
-    /* Typography */
+
+    /* Typography — замінити на 'Cy Grotesk Grand' після додавання файлів */
     --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --letter-spacing: 0.05em;
     
@@ -813,7 +841,7 @@ button:focus-visible {
    PHOTO BACKGROUNDS & SMOOTH TRANSITIONS
    ========================================== */
 
-/* Shared settings for all photo sections */
+/* Shared settings */
 .hero,
 .section.about-section,
 .section.inside-section,
@@ -823,12 +851,12 @@ button:focus-visible {
 .section.support-section,
 .section.final-section {
     background-size: cover;
-    background-position: center top;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-color: var(--bg-main);
+    background-color: #1a1a1a;
 }
 
-/* Reset alternating background that would override */
+/* Reset alternating section background */
 .section.about-section,
 .section.inside-section,
 .section.why-section,
@@ -836,95 +864,93 @@ button:focus-visible {
 .section.access-section,
 .section.support-section,
 .section.final-section {
-    background-color: var(--bg-main);
+    background-color: #1a1a1a;
 }
 
-/* Hero — dynamic pose by the sea */
+/* Overlay formula: soft top fade + mid visibility + soft bottom fade — no solid hex */
 .hero {
     background-image:
         linear-gradient(to bottom,
-            rgba(244,245,243,0.80) 0%,
-            rgba(244,245,243,0.80) 78%,
-            #F4F5F3 100%),
+            rgba(244,245,243,0.55) 0%,
+            rgba(244,245,243,0.42) 40%,
+            rgba(244,245,243,0.42) 70%,
+            rgba(244,245,243,0.65) 100%),
         url('images/EmptyName-10.webp');
+    background-position: center top;
 }
 
-/* About — luxury lifestyle with Chanel accessories */
 .section.about-section {
     background-image:
         linear-gradient(to bottom,
-            #F4F5F3 0%,
-            rgba(244,245,243,0.82) 10%,
-            rgba(244,245,243,0.82) 78%,
-            #F4F5F3 100%),
+            rgba(244,245,243,0.65) 0%,
+            rgba(244,245,243,0.40) 18%,
+            rgba(244,245,243,0.40) 75%,
+            rgba(244,245,243,0.65) 100%),
         url('images/EmptyName-14.webp');
 }
 
-/* Inside — reading a book (ідеально для секції "Що всередині") */
 .section.inside-section {
     background-image:
         linear-gradient(to bottom,
-            #F4F5F3 0%,
-            rgba(244,245,243,0.82) 10%,
-            rgba(244,245,243,0.82) 78%,
-            #F4F5F3 100%),
+            rgba(244,245,243,0.65) 0%,
+            rgba(244,245,243,0.40) 18%,
+            rgba(244,245,243,0.40) 75%,
+            rgba(244,245,243,0.65) 100%),
         url('images/EmptyName-5.webp');
 }
 
-/* Why — confident Chanel pose */
 .section.why-section {
     background-image:
         linear-gradient(to bottom,
-            #F4F5F3 0%,
-            rgba(244,245,243,0.82) 10%,
-            rgba(244,245,243,0.82) 78%,
-            #F4F5F3 100%),
+            rgba(244,245,243,0.65) 0%,
+            rgba(244,245,243,0.40) 18%,
+            rgba(244,245,243,0.40) 75%,
+            rgba(244,245,243,0.65) 100%),
         url('images/EmptyName-1.webp');
+    background-position: center top;
 }
 
-/* Bonuses — relaxed poolside */
 .section.bonuses-section {
     background-image:
         linear-gradient(to bottom,
-            #F4F5F3 0%,
-            rgba(244,245,243,0.82) 10%,
-            rgba(244,245,243,0.82) 78%,
-            #F4F5F3 100%),
+            rgba(244,245,243,0.65) 0%,
+            rgba(244,245,243,0.40) 18%,
+            rgba(244,245,243,0.40) 75%,
+            rgba(244,245,243,0.65) 100%),
         url('images/EmptyName-2.webp');
 }
 
-/* Access — contemplative pose with book */
 .section.access-section {
     background-image:
         linear-gradient(to bottom,
-            #F4F5F3 0%,
-            rgba(244,245,243,0.82) 10%,
-            rgba(244,245,243,0.82) 78%,
-            #F4F5F3 100%),
+            rgba(244,245,243,0.65) 0%,
+            rgba(244,245,243,0.40) 18%,
+            rgba(244,245,243,0.40) 75%,
+            rgba(244,245,243,0.65) 100%),
         url('images/EmptyName-4.webp');
+    background-position: center top;
 }
 
-/* Support — elegant detail shot */
 .section.support-section {
     background-image:
         linear-gradient(to bottom,
-            #F4F5F3 0%,
-            rgba(244,245,243,0.82) 10%,
-            rgba(244,245,243,0.82) 78%,
-            #F4F5F3 100%),
+            rgba(244,245,243,0.65) 0%,
+            rgba(244,245,243,0.40) 18%,
+            rgba(244,245,243,0.40) 75%,
+            rgba(244,245,243,0.65) 100%),
         url('images/EmptyName-8.webp');
-    background-position: center center;
+    background-position: center bottom;
 }
 
-/* Final CTA — strong editorial shot, fades into dark footer */
 .section.final-section {
     background-image:
         linear-gradient(to bottom,
-            #F4F5F3 0%,
-            rgba(244,245,243,0.82) 10%,
-            rgba(244,245,243,0.82) 78%,
-            #2C2C2C 100%),
+            rgba(244,245,243,0.65) 0%,
+            rgba(244,245,243,0.40) 18%,
+            rgba(244,245,243,0.40) 72%,
+            rgba(26,26,26,0.90) 100%),
         url('images/EmptyName-16.webp');
+    background-position: center top;
 }
 
 /* Parallax on desktop — disabled on touch/iOS */
