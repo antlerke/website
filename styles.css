@@ -128,7 +128,7 @@ a {
 .header {
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1002;
     background: rgba(244, 245, 243, 0.95);
     backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--border);
@@ -248,6 +248,29 @@ a {
     margin-top: var(--space-md);
     width: 100%;
     text-align: center;
+}
+
+.nav-close {
+    position: absolute;
+    top: var(--space-md);
+    right: var(--space-md);
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: var(--text-primary);
+    padding: 0;
+    line-height: 1;
+    transition: opacity var(--transition-fast);
+}
+
+.nav-close:hover {
+    opacity: 0.6;
 }
 
 /* Nav overlay */

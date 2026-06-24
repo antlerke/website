@@ -138,6 +138,9 @@ function initHamburger() {
 
     overlay.addEventListener('click', close);
 
+    const closeBtn = document.getElementById('nav-close');
+    if (closeBtn) closeBtn.addEventListener('click', close);
+
     nav.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', close);
     });
