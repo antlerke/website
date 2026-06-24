@@ -4,16 +4,11 @@
 // ==========================================
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Smooth navigation
+    initHamburger();
     initSmoothScroll();
-    // Lazy animations
     observeElements();
-    // Header effects
     headerScrollEffect();
-    // Button polish
     initializeButtons();
-    
-    console.log('🎨 БАЗОВИЙ ГАРДЕРОБ premium site loaded');
 });
 
 // ==========================================
@@ -112,4 +107,38 @@ function initializeButtons() {
     });
 }
 
-console.log('✨ Premium fashion editorial landing page - /polish complete');
+// ==========================================
+// Hamburger Menu
+// ==========================================
+
+function initHamburger() {
+    const btn = document.querySelector('.hamburger');
+    const nav = document.getElementById('nav-menu');
+    const overlay = document.getElementById('nav-overlay');
+
+    function open() {
+        nav.classList.add('open');
+        overlay.classList.add('open');
+        btn.classList.add('active');
+        btn.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function close() {
+        nav.classList.remove('open');
+        overlay.classList.remove('open');
+        btn.classList.remove('active');
+        btn.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+    }
+
+    btn.addEventListener('click', () => {
+        btn.classList.contains('active') ? close() : open();
+    });
+
+    overlay.addEventListener('click', close);
+
+    nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', close);
+    });
+}
