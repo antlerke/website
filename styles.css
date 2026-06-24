@@ -339,7 +339,7 @@ a {
     gap: var(--space-xl);
     align-items: start;
     margin-bottom: var(--space-xl);
-    max-width: 680px;
+    max-width: 1100px;
 }
 
 .hero-cta {
@@ -1028,15 +1028,14 @@ button:focus-visible {
     background-color: #1a1a1a;
 }
 
-/* Hero: gradient left-to-right — light on left (text area), photo visible on right (model) */
+/* Overlay: мінімальний — фото дихає, текст читається через text-shadow */
 .hero {
     background-image:
-        linear-gradient(to right,
-            rgba(244,245,243,0.92) 0%,
-            rgba(244,245,243,0.85) 30%,
-            rgba(244,245,243,0.35) 52%,
-            rgba(244,245,243,0.08) 68%,
-            rgba(244,245,243,0.0) 85%),
+        linear-gradient(to bottom,
+            rgba(244,245,243,0.25) 0%,
+            rgba(244,245,243,0.15) 35%,
+            rgba(244,245,243,0.15) 70%,
+            rgba(244,245,243,0.35) 100%),
         url('images/EmptyName-10.webp');
     background-position: center top;
 }
