@@ -853,6 +853,40 @@ button:focus-visible {
 }
 
 /* ==========================================
+   TEXT READABILITY ON PHOTO BACKGROUNDS
+   ========================================== */
+
+/* Hero: soft shadow so light title reads on bright b&w photo */
+.hero-title {
+    text-shadow: 0 2px 24px rgba(244,245,243,0.6), 0 0 48px rgba(244,245,243,0.4);
+}
+
+.hero-subtitle,
+.hero-description {
+    text-shadow: 0 1px 12px rgba(244,245,243,0.7);
+}
+
+.hero-features li {
+    text-shadow: 0 1px 8px rgba(244,245,243,0.8);
+}
+
+/* Section titles on photo backgrounds */
+.section-title {
+    text-shadow: 0 2px 20px rgba(244,245,243,0.6), 0 0 40px rgba(244,245,243,0.3);
+}
+
+/* Body text in photo sections: slightly darker for contrast */
+.about-section .about-text p,
+.inside-section .cards-footer,
+.why-section .why-intro,
+.bonuses-section .bonus-item p,
+.access-section .access-intro,
+.access-section .access-note,
+.support-section .support-text {
+    text-shadow: 0 1px 6px rgba(244,245,243,0.9);
+}
+
+/* ==========================================
    PHOTO BACKGROUNDS & SMOOTH TRANSITIONS
    ========================================== */
 
@@ -882,14 +916,14 @@ button:focus-visible {
     background-color: #1a1a1a;
 }
 
-/* Overlay formula: soft top fade + mid visibility + soft bottom fade — no solid hex */
+/* Overlay: мінімальний — фото дихає, текст читається через text-shadow */
 .hero {
     background-image:
         linear-gradient(to bottom,
-            rgba(244,245,243,0.55) 0%,
-            rgba(244,245,243,0.42) 40%,
-            rgba(244,245,243,0.42) 70%,
-            rgba(244,245,243,0.65) 100%),
+            rgba(244,245,243,0.25) 0%,
+            rgba(244,245,243,0.15) 35%,
+            rgba(244,245,243,0.15) 70%,
+            rgba(244,245,243,0.35) 100%),
         url('images/EmptyName-10.webp');
     background-position: center top;
 }
@@ -897,30 +931,30 @@ button:focus-visible {
 .section.about-section {
     background-image:
         linear-gradient(to bottom,
-            rgba(244,245,243,0.65) 0%,
-            rgba(244,245,243,0.40) 18%,
-            rgba(244,245,243,0.40) 75%,
-            rgba(244,245,243,0.65) 100%),
+            rgba(244,245,243,0.35) 0%,
+            rgba(244,245,243,0.15) 15%,
+            rgba(244,245,243,0.15) 78%,
+            rgba(244,245,243,0.35) 100%),
         url('images/EmptyName-14.webp');
 }
 
 .section.inside-section {
     background-image:
         linear-gradient(to bottom,
-            rgba(244,245,243,0.65) 0%,
-            rgba(244,245,243,0.40) 18%,
-            rgba(244,245,243,0.40) 75%,
-            rgba(244,245,243,0.65) 100%),
+            rgba(244,245,243,0.35) 0%,
+            rgba(244,245,243,0.15) 15%,
+            rgba(244,245,243,0.15) 78%,
+            rgba(244,245,243,0.35) 100%),
         url('images/EmptyName-5.webp');
 }
 
 .section.why-section {
     background-image:
         linear-gradient(to bottom,
-            rgba(244,245,243,0.65) 0%,
-            rgba(244,245,243,0.40) 18%,
-            rgba(244,245,243,0.40) 75%,
-            rgba(244,245,243,0.65) 100%),
+            rgba(244,245,243,0.35) 0%,
+            rgba(244,245,243,0.15) 15%,
+            rgba(244,245,243,0.15) 78%,
+            rgba(244,245,243,0.35) 100%),
         url('images/EmptyName-1.webp');
     background-position: center top;
 }
@@ -928,20 +962,20 @@ button:focus-visible {
 .section.bonuses-section {
     background-image:
         linear-gradient(to bottom,
-            rgba(244,245,243,0.65) 0%,
-            rgba(244,245,243,0.40) 18%,
-            rgba(244,245,243,0.40) 75%,
-            rgba(244,245,243,0.65) 100%),
+            rgba(244,245,243,0.35) 0%,
+            rgba(244,245,243,0.15) 15%,
+            rgba(244,245,243,0.15) 78%,
+            rgba(244,245,243,0.35) 100%),
         url('images/EmptyName-2.webp');
 }
 
 .section.access-section {
     background-image:
         linear-gradient(to bottom,
-            rgba(244,245,243,0.65) 0%,
-            rgba(244,245,243,0.40) 18%,
-            rgba(244,245,243,0.40) 75%,
-            rgba(244,245,243,0.65) 100%),
+            rgba(244,245,243,0.35) 0%,
+            rgba(244,245,243,0.15) 15%,
+            rgba(244,245,243,0.15) 78%,
+            rgba(244,245,243,0.35) 100%),
         url('images/EmptyName-4.webp');
     background-position: center top;
 }
@@ -949,10 +983,10 @@ button:focus-visible {
 .section.support-section {
     background-image:
         linear-gradient(to bottom,
-            rgba(244,245,243,0.65) 0%,
-            rgba(244,245,243,0.40) 18%,
-            rgba(244,245,243,0.40) 75%,
-            rgba(244,245,243,0.65) 100%),
+            rgba(244,245,243,0.35) 0%,
+            rgba(244,245,243,0.15) 15%,
+            rgba(244,245,243,0.15) 78%,
+            rgba(244,245,243,0.35) 100%),
         url('images/EmptyName-8.webp');
     background-position: center bottom;
 }
@@ -960,10 +994,10 @@ button:focus-visible {
 .section.final-section {
     background-image:
         linear-gradient(to bottom,
-            rgba(244,245,243,0.65) 0%,
-            rgba(244,245,243,0.40) 18%,
-            rgba(244,245,243,0.40) 72%,
-            rgba(26,26,26,0.90) 100%),
+            rgba(244,245,243,0.35) 0%,
+            rgba(244,245,243,0.15) 15%,
+            rgba(244,245,243,0.15) 72%,
+            rgba(26,26,26,0.92) 100%),
         url('images/EmptyName-16.webp');
     background-position: center top;
 }
