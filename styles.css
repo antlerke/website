@@ -611,27 +611,18 @@ a {
     margin: 0 auto;
 }
 
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: var(--space-2xl);
-    align-items: flex-start;
-    margin-top: var(--space-2xl);
+.about-card {
+    max-width: 680px;
+    margin: 0 auto;
+    background: rgba(244, 245, 243, 0.93);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    padding: var(--space-2xl) var(--space-2xl);
     animation: fadeInUp 0.8s var(--transition-ease-out) 0.2s both;
 }
 
-.about-label {
-    display: flex;
-    align-items: flex-start;
-}
-
-.about-number {
-    font-size: 0.875rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--text-light);
-    padding-top: 0.25rem;
+.about-card .section-title {
+    margin-bottom: var(--space-lg);
 }
 
 .about-text p {
@@ -639,6 +630,10 @@ a {
     margin-bottom: var(--space-md);
     font-size: 1rem;
     line-height: 1.8;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
 }
 
 .about-text p:first-child {
@@ -1007,10 +1002,7 @@ a {
         font-size: clamp(1.5rem, 5vw, 2rem);
     }
     
-    .about-grid {
-        grid-template-columns: 1fr;
-        gap: var(--space-lg);
-    }
+
     
     .cards-grid {
         grid-template-columns: 1fr;
@@ -1122,10 +1114,10 @@ button:focus-visible {
 .section.inside-section {
     background-image:
         linear-gradient(to bottom,
-            rgba(244,245,243,0.35) 0%,
-            rgba(244,245,243,0.15) 15%,
-            rgba(244,245,243,0.15) 78%,
-            rgba(244,245,243,0.35) 100%),
+            rgba(244,245,243,0.55) 0%,
+            rgba(26,26,26,0.05) 20%,
+            rgba(26,26,26,0.05) 80%,
+            rgba(244,245,243,0.55) 100%),
         url('images/EmptyName-5.webp');
 }
 
