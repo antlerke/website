@@ -614,15 +614,17 @@ a {
 .about-card {
     max-width: 680px;
     margin: 0 auto;
-    background: rgba(244, 245, 243, 0.93);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+    background: rgba(244, 245, 243, 0.60);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     padding: var(--space-2xl) var(--space-2xl);
     animation: fadeInUp 0.8s var(--transition-ease-out) 0.2s both;
 }
 
 .about-card .section-title {
     margin-bottom: var(--space-lg);
+    color: var(--text-primary);
+    text-shadow: none;
 }
 
 .about-text p {
@@ -1077,7 +1079,7 @@ button:focus-visible {
 
 /* Section titles on photo backgrounds */
 .section-title {
-    text-shadow: 0 2px 20px rgba(244,245,243,0.6), 0 0 40px rgba(244,245,243,0.3);
+    text-shadow: 0 1px 4px rgba(0,0,0,0.4), 0 2px 20px rgba(0,0,0,0.25);
 }
 
 /* Body text in photo sections: slightly darker for contrast */
