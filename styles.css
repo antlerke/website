@@ -312,6 +312,7 @@ a {
 .hero {
     position: relative;
     overflow: hidden;
+    background-color: #888;
     background-image:
         linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.4) 100%),
         url('images/EmptyName-10.webp');
