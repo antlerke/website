@@ -333,7 +333,7 @@ a {
     min-height: calc(100svh - 90px);
     padding: 7vh var(--space-md) var(--space-lg);
     box-sizing: border-box;
-    animation: fadeInUp 0.8s var(--transition-ease-out) both;
+    animation: fadeInUp 0.8s ease-out both;
 }
 
 .hero-badge {
@@ -614,19 +614,28 @@ a {
     margin: 0 auto;
 }
 
-.about-card {
-    max-width: 680px;
+.about-layout {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--space-2xl);
+    align-items: start;
+    max-width: 900px;
     margin: 0 auto;
-    background: #E8E8E5;
-    border-radius: 16px;
-    padding: var(--space-2xl) var(--space-2xl);
-    animation: fadeInUp 0.8s var(--transition-ease-out) 0.2s both;
+    animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
-.about-card .section-title {
+.about-guide-label {
+    font-size: clamp(5rem, 11vw, 8rem);
+    font-weight: 100;
+    color: var(--text-light);
+    letter-spacing: -0.03em;
+    line-height: 0.85;
+    display: block;
+}
+
+.about-title {
+    text-align: left;
     margin-bottom: var(--space-lg);
-    color: var(--text-primary);
-    text-shadow: none;
 }
 
 .about-text p {
@@ -666,7 +675,7 @@ a {
     border-radius: 16px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.04);
     transition: all var(--transition-smooth);
-    animation: fadeInUp 0.8s var(--transition-ease-out) 0.3s both;
+    animation: fadeInUp 0.8s ease-out 0.3s both;
     position: relative;
 }
 
@@ -739,7 +748,7 @@ a {
 .benefit-item {
     text-align: center;
     padding: var(--space-xl) var(--space-md);
-    animation: fadeInUp 0.8s var(--transition-ease-out) 0.4s both;
+    animation: fadeInUp 0.8s ease-out 0.4s both;
     background: #E8E8E5;
     border-radius: 16px;
     box-shadow: 0 2px 16px rgba(0,0,0,0.05);
@@ -747,11 +756,12 @@ a {
 
 .benefit-number {
     display: block;
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: var(--tiffany);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 100;
+    color: var(--text-light);
     margin-bottom: var(--space-sm);
-    letter-spacing: 0.1em;
+    letter-spacing: -0.02em;
+    line-height: 1;
 }
 
 .benefit-item h4 {
@@ -787,7 +797,7 @@ a {
 .bonus-item {
     padding: var(--space-2xl);
     border-left: 2px solid var(--tiffany);
-    animation: fadeInUp 0.8s var(--transition-ease-out) 0.5s both;
+    animation: fadeInUp 0.8s ease-out 0.5s both;
     transition: box-shadow var(--transition-normal);
     background: #E8E8E5;
     border-radius: 16px;
@@ -800,11 +810,12 @@ a {
 
 .bonus-number {
     display: block;
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: var(--tiffany);
-    margin-bottom: var(--space-sm);
-    letter-spacing: 0.1em;
+    font-size: clamp(3rem, 7vw, 5rem);
+    font-weight: 100;
+    color: var(--text-light);
+    margin-bottom: var(--space-md);
+    letter-spacing: -0.02em;
+    line-height: 1;
 }
 
 .bonus-item h3 {
@@ -863,7 +874,7 @@ a {
     border-radius: 16px;
     border: none;
     text-align: center;
-    animation: fadeInUp 0.8s var(--transition-ease-out) 0.6s both;
+    animation: fadeInUp 0.8s ease-out 0.6s both;
     transition: box-shadow var(--transition-normal);
     box-shadow: 0 2px 16px rgba(0,0,0,0.05);
 }
@@ -874,11 +885,12 @@ a {
 
 .step-number {
     display: block;
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: var(--tiffany);
-    margin-bottom: var(--space-sm);
-    letter-spacing: 0.1em;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 100;
+    color: var(--text-light);
+    margin-bottom: var(--space-md);
+    letter-spacing: -0.02em;
+    line-height: 1;
 }
 
 .step h4 {
@@ -934,7 +946,7 @@ a {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    animation: fadeInUp 0.8s var(--transition-ease-out) both;
+    animation: fadeInUp 0.8s ease-out both;
 }
 
 .final-subtitle {
@@ -943,7 +955,7 @@ a {
     max-width: 700px;
     margin: 0 auto var(--space-2xl);
     line-height: 1.8;
-    animation: fadeInUp 0.8s var(--transition-ease-out) 0.1s both;
+    animation: fadeInUp 0.8s ease-out 0.1s both;
 }
 
 /* ==========================================
@@ -1043,19 +1055,13 @@ a {
         font-size: clamp(1.75rem, 6vw, 2.5rem);
     }
 
-    /* Reduce backdrop card padding on mobile */
-    .about-card {
-        padding: var(--space-lg) var(--space-sm);
+    .about-layout {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
     }
 
-    .why-intro,
-    .cards-footer,
-    .access-intro,
-    .access-note,
-    .support-text,
-    .final-subtitle {
-        padding: var(--space-md) var(--space-sm);
-        text-align: left;
+    .about-guide-label {
+        font-size: 5rem;
     }
 
 }
