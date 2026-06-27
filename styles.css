@@ -660,11 +660,11 @@ a {
 }
 
 .card {
-    background: #E8E8E5;
-    border: none;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid var(--border);
     padding: var(--space-2xl);
     border-radius: 16px;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
     transition: all var(--transition-smooth);
     animation: fadeInUp 0.8s var(--transition-ease-out) 0.3s both;
     position: relative;
@@ -672,7 +672,7 @@ a {
 
 .card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.09);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 .card-badge {
@@ -706,13 +706,10 @@ a {
 .cards-footer {
     text-align: center;
     font-size: 0.938rem;
-    color: var(--text-primary);
+    color: var(--text-secondary);
     max-width: 600px;
     margin: var(--space-lg) auto 0;
     line-height: 1.8;
-    background: #E8E8E5;
-    border-radius: 16px;
-    padding: var(--space-lg) var(--space-xl);
 }
 
 /* ==========================================
@@ -726,13 +723,10 @@ a {
 .why-intro {
     text-align: center;
     font-size: 1.063rem;
-    color: var(--text-primary);
+    color: var(--text-secondary);
     max-width: 700px;
     margin: 0 auto var(--space-2xl);
     line-height: 1.8;
-    background: #E8E8E5;
-    border-radius: 16px;
-    padding: var(--space-lg) var(--space-xl);
 }
 
 .benefits-grid {
@@ -845,21 +839,15 @@ a {
     margin: 0 auto var(--space-md);
     line-height: 1.8;
     font-weight: 500;
-    background: #E8E8E5;
-    border-radius: 16px;
-    padding: var(--space-lg) var(--space-xl);
 }
 
 .access-note {
     text-align: center;
     font-size: 0.938rem;
-    color: var(--text-primary);
+    color: var(--text-secondary);
     max-width: 700px;
     margin: 0 auto var(--space-2xl);
     line-height: 1.8;
-    background: #E8E8E5;
-    border-radius: 16px;
-    padding: var(--space-lg) var(--space-xl);
 }
 
 .steps-grid {
@@ -919,13 +907,10 @@ a {
 
 .support-text {
     font-size: 1rem;
-    color: var(--text-primary);
+    color: var(--text-secondary);
     max-width: 600px;
     margin: 0 auto var(--space-2xl);
     line-height: 1.8;
-    background: #E8E8E5;
-    border-radius: 16px;
-    padding: var(--space-lg) var(--space-xl);
 }
 
 /* ==========================================
@@ -954,14 +939,11 @@ a {
 
 .final-subtitle {
     font-size: 1.063rem;
-    color: var(--text-primary);
+    color: var(--text-secondary);
     max-width: 700px;
     margin: 0 auto var(--space-2xl);
     line-height: 1.8;
     animation: fadeInUp 0.8s var(--transition-ease-out) 0.1s both;
-    background: #E8E8E5;
-    border-radius: 16px;
-    padding: var(--space-lg) var(--space-xl);
 }
 
 /* ==========================================
