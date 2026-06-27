@@ -596,9 +596,12 @@ a {
     font-weight: 700;
     letter-spacing: -0.01em;
     text-transform: uppercase;
-    color: var(--text-light);
+    color: #2A2A2A;
     margin-bottom: var(--space-2xl);
     text-align: center;
+    padding-bottom: 0.4em;
+    border-bottom: 2px solid var(--tiffany);
+    display: inline-block;
 }
 
 /* ==========================================
