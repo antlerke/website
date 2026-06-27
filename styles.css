@@ -1101,19 +1101,6 @@ a {
         text-align: left;
     }
 
-    /* Photo sections: show full photo at natural proportions */
-    .section.about-section,
-    .section.inside-section,
-    .section.why-section,
-    .section.bonuses-section,
-    .section.access-section,
-    .section.support-section,
-    .section.final-section {
-        background-size: 100% 100%, 100% auto;
-        background-position: top center, top center;
-        background-repeat: no-repeat, no-repeat;
-        background-color: var(--bg-main);
-    }
 }
 
 @media (max-width: 480px) {
@@ -1206,6 +1193,22 @@ button:focus-visible {
     background-position: center center;
     background-repeat: no-repeat;
     background-color: #1a1a1a;
+}
+
+/* Mobile: show full photo at natural proportions, not cropped */
+@media (max-width: 768px) {
+    .section.about-section,
+    .section.inside-section,
+    .section.why-section,
+    .section.bonuses-section,
+    .section.access-section,
+    .section.support-section,
+    .section.final-section {
+        background-size: 100% 100%, 100% auto;
+        background-position: top center, top center;
+        background-repeat: no-repeat, no-repeat;
+        background-color: var(--bg-main);
+    }
 }
 
 /* Про гайд + Що всередині — одна підкладинка */
