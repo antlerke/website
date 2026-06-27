@@ -1121,7 +1121,7 @@ a {
 @media (max-width: 599px) {
     /* Hero text blocks: frosted backdrop on photo background */
     .hero-mid {
-        background: rgba(244, 245, 243, 0.30);
+        background: rgba(244, 245, 243, 0.20);
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
         border-radius: 16px;
