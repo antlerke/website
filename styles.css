@@ -743,8 +743,8 @@ a {
 
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: var(--space-2xl);
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
     margin-top: var(--space-2xl);
 }
 
@@ -1055,11 +1055,6 @@ a {
     
     .cards-grid {
         grid-template-columns: 1fr;
-    }
-    
-    .benefits-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: var(--space-lg);
     }
     
     .benefit-item {
