@@ -1083,6 +1083,21 @@ a {
     .final-title {
         font-size: clamp(1.75rem, 6vw, 2.5rem);
     }
+
+    /* Reduce backdrop card padding on mobile */
+    .about-card {
+        padding: var(--space-lg) var(--space-sm);
+    }
+
+    .why-intro,
+    .cards-footer,
+    .access-intro,
+    .access-note,
+    .support-text,
+    .final-subtitle {
+        padding: var(--space-md) var(--space-sm);
+        text-align: left;
+    }
 }
 
 @media (max-width: 480px) {
