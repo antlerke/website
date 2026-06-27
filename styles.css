@@ -617,7 +617,7 @@ a {
 .about-card {
     max-width: 680px;
     margin: 0 auto;
-    background: rgba(244, 245, 243, 0.60);
+    background: #ffffff;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 16px;
@@ -662,7 +662,7 @@ a {
 }
 
 .card {
-    background: rgba(244, 245, 243, 0.60);
+    background: #ffffff;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border: none;
@@ -713,7 +713,7 @@ a {
     max-width: 600px;
     margin: var(--space-lg) auto 0;
     line-height: 1.8;
-    background: rgba(244, 245, 243, 0.60);
+    background: #ffffff;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 16px;
@@ -735,7 +735,7 @@ a {
     max-width: 700px;
     margin: 0 auto var(--space-2xl);
     line-height: 1.8;
-    background: rgba(244, 245, 243, 0.60);
+    background: #ffffff;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 16px;
@@ -753,7 +753,7 @@ a {
     text-align: center;
     padding: var(--space-xl) var(--space-md);
     animation: fadeInUp 0.8s var(--transition-ease-out) 0.4s both;
-    background: rgba(244, 245, 243, 0.60);
+    background: #ffffff;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 16px;
@@ -804,7 +804,7 @@ a {
     border-left: 2px solid var(--tiffany);
     animation: fadeInUp 0.8s var(--transition-ease-out) 0.5s both;
     transition: transform var(--transition-normal);
-    background: rgba(244, 245, 243, 0.60);
+    background: #ffffff;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 16px;
@@ -856,7 +856,7 @@ a {
     margin: 0 auto var(--space-md);
     line-height: 1.8;
     font-weight: 500;
-    background: rgba(244, 245, 243, 0.60);
+    background: #ffffff;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 16px;
@@ -870,7 +870,7 @@ a {
     max-width: 700px;
     margin: 0 auto var(--space-2xl);
     line-height: 1.8;
-    background: rgba(244, 245, 243, 0.60);
+    background: #ffffff;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 16px;
@@ -885,7 +885,7 @@ a {
 }
 
 .step {
-    background: rgba(244, 245, 243, 0.60);
+    background: #ffffff;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     padding: var(--space-2xl);
@@ -940,7 +940,7 @@ a {
     max-width: 600px;
     margin: 0 auto var(--space-2xl);
     line-height: 1.8;
-    background: rgba(244, 245, 243, 0.60);
+    background: #ffffff;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 16px;
@@ -978,7 +978,7 @@ a {
     margin: 0 auto var(--space-2xl);
     line-height: 1.8;
     animation: fadeInUp 0.8s var(--transition-ease-out) 0.1s both;
-    background: rgba(244, 245, 243, 0.60);
+    background: #ffffff;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 16px;
@@ -1158,27 +1158,12 @@ button:focus-visible {
    TEXT READABILITY ON PHOTO BACKGROUNDS
    ========================================== */
 
-/* Section titles on photo backgrounds */
-.section-title {
-    text-shadow: 0 1px 4px rgba(0,0,0,0.4), 0 2px 20px rgba(0,0,0,0.25);
-}
-
-/* Body text in photo sections: slightly darker for contrast */
-.about-section .about-text p,
-.inside-section .cards-footer,
-.why-section .why-intro,
-.bonuses-section .bonus-item p,
-.access-section .access-intro,
-.access-section .access-note,
-.support-section .support-text {
-    text-shadow: 0 1px 6px rgba(244,245,243,0.9);
-}
 
 /* ==========================================
    PHOTO BACKGROUNDS & SMOOTH TRANSITIONS
    ========================================== */
 
-/* Shared settings */
+/* All sections — white/cream background, no photo */
 .section.about-section,
 .section.inside-section,
 .section.why-section,
@@ -1186,79 +1171,5 @@ button:focus-visible {
 .section.access-section,
 .section.support-section,
 .section.final-section {
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-color: #1a1a1a;
-}
-
-
-/* Про гайд + Що всередині — одна підкладинка */
-.section.about-section,
-.section.inside-section {
-    background-image:
-        linear-gradient(to bottom,
-            rgba(244,245,243,0.55) 0%,
-            rgba(26,26,26,0.05) 20%,
-            rgba(26,26,26,0.05) 80%,
-            rgba(244,245,243,0.55) 100%),
-        url('images/EmptyName-5.webp');
-}
-
-.section.why-section {
-    background-image:
-        linear-gradient(to bottom,
-            rgba(244,245,243,0.35) 0%,
-            rgba(244,245,243,0.15) 15%,
-            rgba(244,245,243,0.15) 78%,
-            rgba(244,245,243,0.35) 100%),
-        url('images/EmptyName-1.webp');
-    background-position: center top;
-}
-
-.section.bonuses-section {
-    background-image:
-        linear-gradient(to bottom,
-            rgba(244,245,243,0.35) 0%,
-            rgba(244,245,243,0.15) 15%,
-            rgba(244,245,243,0.15) 78%,
-            rgba(244,245,243,0.35) 100%),
-        url('images/EmptyName-2.webp');
-}
-
-.section.access-section {
-    background-image:
-        linear-gradient(to bottom,
-            rgba(244,245,243,0.35) 0%,
-            rgba(244,245,243,0.15) 15%,
-            rgba(244,245,243,0.15) 78%,
-            rgba(244,245,243,0.35) 100%),
-        url('images/EmptyName-4.webp');
-    background-position: center top;
-}
-
-/* Не отримали посилання + Фінальний CTA — одна підкладинка */
-.section.support-section,
-.section.final-section {
-    background-image:
-        linear-gradient(to bottom,
-            rgba(244,245,243,0.35) 0%,
-            rgba(244,245,243,0.15) 15%,
-            rgba(244,245,243,0.15) 72%,
-            rgba(26,26,26,0.92) 100%),
-        url('images/EmptyName-16.webp');
-    background-position: center top;
-}
-
-/* Parallax on desktop — disabled on touch/iOS */
-@media (hover: hover) and (min-width: 769px) {
-    .section.about-section,
-    .section.inside-section,
-    .section.why-section,
-    .section.bonuses-section,
-    .section.access-section,
-    .section.support-section,
-    .section.final-section {
-        background-attachment: fixed;
-    }
+    background: var(--bg-main);
 }
