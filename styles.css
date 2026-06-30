@@ -834,21 +834,21 @@ a {
 }
 
 .access-intro {
-    text-align: center;
+    text-align: left;
     font-size: 1.063rem;
     color: var(--text-primary);
     max-width: 700px;
-    margin: 0 auto var(--space-md);
+    margin: 0 0 var(--space-md);
     line-height: 1.8;
     font-weight: 500;
 }
 
 .access-note {
-    text-align: center;
+    text-align: left;
     font-size: 0.938rem;
     color: var(--text-secondary);
     max-width: 700px;
-    margin: 0 auto var(--space-2xl);
+    margin: 0 0 var(--space-2xl);
     line-height: 1.8;
 }
 
