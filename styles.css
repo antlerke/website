@@ -558,7 +558,7 @@ a {
 .cta-btn-secondary {
     background: transparent;
     color: var(--tiffany);
-    border: 2px solid var(--tiffany);
+    border: 1px solid var(--tiffany);
 }
 
 .cta-btn-secondary:hover {
@@ -600,7 +600,7 @@ a {
     margin-bottom: var(--space-2xl);
     text-align: center;
     padding-bottom: 0.4em;
-    border-bottom: 2px solid var(--tiffany);
+    border-bottom: 1px solid var(--tiffany);
     display: inline-block;
 }
 
@@ -741,7 +741,7 @@ a {
     animation: fadeInUp 0.8s ease-out 0.4s both;
     background: #E8E8E5;
     border-radius: 16px;
-    border-left: 2px solid var(--tiffany);
+    border-left: 1px solid var(--tiffany);
     box-shadow: 0 2px 16px rgba(0,0,0,0.05);
 }
 
@@ -787,7 +787,7 @@ a {
 
 .bonus-item {
     padding: var(--space-2xl);
-    border-left: 2px solid var(--tiffany);
+    border-left: 1px solid var(--tiffany);
     animation: fadeInUp 0.8s ease-out 0.5s both;
     transition: box-shadow var(--transition-normal);
     background: #E8E8E5;
@@ -863,7 +863,7 @@ a {
     background: #E8E8E5;
     padding: var(--space-2xl);
     border-radius: 16px;
-    border-left: 2px solid var(--tiffany);
+    border-left: 1px solid var(--tiffany);
     text-align: center;
     animation: fadeInUp 0.8s ease-out 0.6s both;
     transition: box-shadow var(--transition-normal);
