@@ -221,7 +221,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 88px var(--space-lg) var(--space-lg);
+    padding: 7.5rem var(--space-lg) var(--space-lg);
     gap: var(--space-lg);
     z-index: 1000;
     transition: right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
