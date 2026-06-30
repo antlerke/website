@@ -211,8 +211,8 @@ a {
 .nav-menu {
     position: fixed;
     top: 0;
-    right: -320px;
-    width: 280px;
+    right: -360px;
+    width: 320px;
     height: 100vh;
     background: rgba(244, 245, 243, 0.98);
     backdrop-filter: blur(16px);
@@ -1009,7 +1009,7 @@ a {
     }
     
     .nav-menu {
-        width: 280px;
+        width: 320px;
     }
     
     .section-title {
