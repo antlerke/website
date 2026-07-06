@@ -312,13 +312,7 @@ a {
 .hero {
     position: relative;
     overflow: hidden;
-    background-color: #888;
-    background-image:
-        linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.4) 100%),
-        url('images/EmptyName-10.webp');
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
+    background: var(--bg-main);
 }
 
 .hero-photo-col {
@@ -330,33 +324,40 @@ a {
     z-index: 1;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     min-height: calc(100svh - 90px);
-    padding: 7vh var(--space-md) var(--space-lg);
-    box-sizing: border-box;
+    padding: 6vh 2rem 3rem;
+    max-width: 520px;
+    margin: 0 auto;
     animation: fadeInUp 0.8s ease-out both;
 }
 
 .hero-badge {
-    display: block;
-    font-size: 0.688rem;
+    display: inline-block;
+    font-size: 0.625rem;
     font-weight: 700;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.7);
+    color: var(--text-secondary);
     margin-bottom: var(--space-md);
-    text-align: left;
-    padding: 0;
+    padding: 3px 12px;
+    border: 0.5px solid var(--border);
+    border-radius: 2px;
 }
 
 .hero-title {
-    font-size: clamp(2.2rem, 10vw, 4rem);
-    font-weight: 100;
+    font-size: clamp(2.2rem, 9vw, 4rem);
+    font-weight: 700;
     letter-spacing: -0.01em;
     line-height: 0.9;
-    color: #ffffff;
-    margin-bottom: var(--space-lg);
+    color: #2A2A2A;
+    margin-bottom: var(--space-md);
     text-transform: uppercase;
-    text-shadow: 0 2px 16px rgba(0,0,0,0.4);
+    text-shadow: none;
+    padding-bottom: 0.35em;
+    border-bottom: 1px solid var(--tiffany);
 }
 
 .title-word {
@@ -412,14 +413,14 @@ a {
 .hero-cover-wrap {
     position: relative;
     display: inline-block;
-    margin: var(--space-md) 0;
+    margin: var(--space-sm) 0 var(--space-lg);
 }
 
 .hero-cover-img {
-    width: 220px;
+    width: clamp(200px, 58vw, 280px);
     border-radius: 12px;
     display: block;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
 }
 
 .hero-pdf-badge {
@@ -443,121 +444,41 @@ a {
 }
 
 .hero-cta {
-    margin-top: auto;
-    padding-top: var(--space-lg);
+    margin-top: 0;
+    padding-top: 0;
     text-align: center;
+    width: 100%;
 }
 
-/* Mobile: white text on photo bg */
 .hero-cta .hero-footer {
-    color: rgba(255,255,255,0.8);
-    text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+    color: var(--text-secondary);
+    text-shadow: none;
+    margin-top: var(--space-sm);
+    font-size: 0.813rem;
 }
 
-/* Tablet: two-panel */
+/* Tablet: wider cover */
 @media (min-width: 600px) and (max-width: 1023px) {
-    .hero { background: none; }
-
-    .hero-photo-col {
-        display: block;
-        position: absolute;
-        top: 0; right: 0;
-        height: calc(100svh - 90px);
-        left: 47%;
-        background-image: url('images/EmptyName-10.webp');
-        background-size: cover;
-        background-position: center top;
-    }
-
     .hero-content {
-        width: 47%;
-        background: var(--bg-main);
-        padding: 5vh 2rem 2rem;
-        min-height: calc(100svh - 90px);
+        padding: 5vh 3rem 3rem;
+        max-width: 560px;
     }
-
-    .hero-badge { color: var(--text-secondary); }
-
-    .hero-title {
-        font-size: clamp(1.8rem, 5.2vw, 3.5rem);
-        color: var(--text-light);
-        text-shadow: none;
-        margin-bottom: 1.5rem;
-    }
-
-    .hero-subtitle { color: var(--text-primary); text-shadow: none; }
-    .hero-description { font-size: 0.688rem; }
-    .hero-features li { color: var(--text-primary); font-size: 0.875rem; text-shadow: none; }
-    .hero-features li::before { display: inline; content: '\2014'; margin-right: 0.5rem; color: var(--tiffany); }
-    .hero-cta { margin-top: var(--space-md); padding-top: 0; text-align: center; }
-    .hero-cta .hero-footer { color: var(--text-secondary); text-shadow: none; }
-    .hero-photo-col::after {
-        content: '';
-        position: absolute;
-        top: 0; bottom: 0; left: 0;
-        width: 80px;
-        background: linear-gradient(to right, #F4F5F3, transparent);
-        pointer-events: none;
+    .hero-cover-img {
+        width: clamp(240px, 40vw, 320px);
     }
 }
 
-/* Desktop: two-panel */
+/* Desktop: wider cover */
 @media (min-width: 1024px) {
-    .hero { background: none; }
-
-    .hero-photo-col {
-        display: block;
-        position: absolute;
-        top: 0; right: 0;
-        height: calc(100svh - 90px);
-        left: 43%;
-        background-image: url('images/EmptyName-10.webp');
-        background-size: cover;
-        background-position: center 30%;
-    }
-
     .hero-content {
-        width: 43%;
-        background: var(--bg-main);
-        padding: 5vh 3rem 2.5rem;
-        min-height: calc(100svh - 90px);
+        padding: 6vh 4rem 3rem;
+        max-width: 600px;
     }
-
-    .hero-mid {
-        display: block;
-        margin-bottom: var(--space-md);
-    }
-
-    .hero-left {
-        margin-bottom: var(--space-sm);
-        padding-top: 0;
-    }
-
-    .hero-badge {
-        color: var(--text-secondary);
-        margin-bottom: var(--space-sm);
-    }
-
     .hero-title {
-        font-size: clamp(2rem, 3.5vw, 5rem);
-        color: var(--text-light);
-        text-shadow: none;
-        margin-bottom: var(--space-md);
+        font-size: clamp(2.5rem, 4vw, 4.5rem);
     }
-
-    .hero-subtitle { color: var(--text-primary); text-shadow: none; }
-    .hero-description { font-size: 0.688rem; color: var(--tiffany); margin-bottom: var(--space-sm); }
-    .hero-features li { color: var(--text-primary); font-size: 0.875rem; text-shadow: none; }
-    .hero-features li::before { display: inline; content: '\2014'; margin-right: 0.5rem; color: var(--tiffany); }
-    .hero-cta { margin-top: var(--space-lg); padding-top: 0; text-align: center; }
-    .hero-cta .hero-footer { color: var(--text-secondary); text-shadow: none; }
-    .hero-photo-col::after {
-        content: '';
-        position: absolute;
-        top: 0; bottom: 0; left: 0;
-        width: 120px;
-        background: linear-gradient(to right, #F4F5F3, transparent);
-        pointer-events: none;
+    .hero-cover-img {
+        width: 320px;
     }
 }
 
