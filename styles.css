@@ -573,7 +573,7 @@ a {
     text-transform: uppercase;
     color: #2A2A2A;
     margin-bottom: var(--space-2xl);
-    text-align: center;
+    text-align: left;
     padding-bottom: 0.4em;
     border-bottom: 1px solid var(--tiffany);
     display: inline-block;
@@ -597,7 +597,7 @@ a {
 }
 
 .about-title {
-    text-align: center;
+    text-align: left;
     margin-bottom: var(--space-lg);
 }
 
@@ -720,11 +720,11 @@ a {
 }
 
 .cards-footer {
-    text-align: center;
+    text-align: left;
     font-size: 0.938rem;
     color: var(--text-secondary);
     max-width: 600px;
-    margin: var(--space-lg) auto 0;
+    margin: var(--space-lg) 0 0;
     line-height: 1.8;
 }
 
@@ -737,11 +737,11 @@ a {
 }
 
 .why-intro {
-    text-align: center;
+    text-align: left;
     font-size: 1.063rem;
     color: var(--text-secondary);
     max-width: 700px;
-    margin: 0 auto var(--space-2xl);
+    margin: 0 0 var(--space-2xl);
     line-height: 1.8;
 }
 
@@ -928,11 +928,11 @@ a {
 }
 
 .partners-footer {
-    text-align: center;
+    text-align: left;
     font-size: 0.938rem;
     color: var(--text-secondary);
     max-width: 520px;
-    margin: 0 auto;
+    margin: 0;
     line-height: 1.8;
 }
 
@@ -1016,14 +1016,14 @@ a {
 
 .support-section {
     padding: var(--space-3xl) var(--space-md);
-    text-align: center;
+    text-align: left;
 }
 
 .support-text {
     font-size: 1rem;
     color: var(--text-secondary);
     max-width: 600px;
-    margin: 0 auto var(--space-2xl);
+    margin: 0 0 var(--space-2xl);
     line-height: 1.8;
 }
 
@@ -1033,7 +1033,7 @@ a {
 
 .final-section {
     padding: var(--space-3xl) var(--space-md);
-    text-align: center;
+    text-align: left;
     background: linear-gradient(180deg, #FAFAF8 0%, #F8F8F6 100%);
 }
 
@@ -1046,8 +1046,6 @@ a {
     margin-bottom: var(--space-lg);
     line-height: 1.2;
     max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
     animation: fadeInUp 0.8s ease-out both;
 }
 
@@ -1055,7 +1053,7 @@ a {
     font-size: 1.063rem;
     color: var(--text-secondary);
     max-width: 700px;
-    margin: 0 auto var(--space-2xl);
+    margin: 0 0 var(--space-2xl);
     line-height: 1.8;
     animation: fadeInUp 0.8s ease-out 0.1s both;
 }
