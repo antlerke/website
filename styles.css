@@ -587,13 +587,11 @@ a {
 }
 
 .about-layout {
-    max-width: 700px;
-    margin: 0 auto;
     animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
 .about-title {
-    text-align: left;
+    text-align: center;
     margin-bottom: var(--space-lg);
 }
 
