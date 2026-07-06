@@ -703,10 +703,10 @@ a {
     border-color: rgba(214, 188, 198, 0.4);
 }
 
-/* Guide page thumbnails inside card — fanned stack */
+/* Guide page thumbnails inside card — ascending staircase */
 .card-pages {
     position: relative;
-    height: 86px;
+    height: 110px;
     margin-top: var(--space-md);
 }
 
@@ -717,27 +717,26 @@ a {
     border-radius: 4px;
     box-shadow: 0 3px 12px rgba(0,0,0,0.18);
     position: absolute;
-    bottom: 0;
 }
 
 .card-page-img:nth-child(1) {
-    right: 72px;
-    transform: rotate(-10deg);
-    transform-origin: bottom center;
+    right: 76px;
+    bottom: 0;
+    transform: rotate(-4deg);
     z-index: 1;
 }
 
 .card-page-img:nth-child(2) {
-    right: 38px;
-    transform: rotate(-2deg);
-    transform-origin: bottom center;
+    right: 40px;
+    bottom: 18px;
+    transform: rotate(-1deg);
     z-index: 2;
 }
 
 .card-page-img:nth-child(3) {
     right: 4px;
-    transform: rotate(6deg);
-    transform-origin: bottom center;
+    bottom: 36px;
+    transform: rotate(2deg);
     z-index: 3;
 }
 
