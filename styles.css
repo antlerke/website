@@ -86,6 +86,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -96,6 +97,8 @@ body {
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 /* Typography */
@@ -328,7 +331,7 @@ a {
     justify-content: center;
     text-align: center;
     min-height: calc(100svh - 90px);
-    padding: 2vh 2rem 3rem;
+    padding: 2vh var(--space-md) 3rem;
     max-width: 520px;
     margin: 0 auto;
     animation: fadeInUp 0.8s ease-out both;
@@ -424,7 +427,7 @@ a {
 }
 
 .hero-cover-img {
-    width: clamp(280px, 82vw, 360px);
+    width: clamp(240px, 78vw, 360px);
     border-radius: 12px;
     display: block;
     box-shadow: 0 8px 32px rgba(0,0,0,0.12);
@@ -883,6 +886,7 @@ a {
     align-items: center;
     gap: var(--space-sm);
     animation: fadeInUp 0.8s ease-out 0.3s both;
+    min-width: 0;
 }
 
 .partner-card--cream {
@@ -943,6 +947,10 @@ a {
     letter-spacing: 0.06em;
     color: var(--text-secondary);
     text-transform: lowercase;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    text-align: center;
+    width: 100%;
 }
 
 .partner-card--dark .partner-handle {
@@ -1129,6 +1137,7 @@ a {
 
 @media (max-width: 768px) {
     :root {
+        --space-md: 1.25rem;
         --space-lg: 2rem;
         --space-xl: 2.5rem;
         --space-2xl: 3rem;
@@ -1191,6 +1200,23 @@ a {
 
     .bonus-item {
         padding: var(--space-lg);
+    }
+
+    .partner-logo-wrap {
+        width: 80px;
+        height: 80px;
+    }
+
+    .partner-card {
+        padding: var(--space-lg) var(--space-sm);
+    }
+
+    .hero-pdf-badge {
+        width: 76px;
+        height: 76px;
+        font-size: 0.55rem;
+        left: -18px;
+        bottom: -16px;
     }
 }
 
