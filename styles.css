@@ -360,6 +360,13 @@ a {
     border-bottom: 1px solid var(--tiffany);
 }
 
+.hero-divider {
+    width: 120px;
+    height: 1px;
+    background: var(--tiffany);
+    margin: 0.5rem auto var(--space-md);
+}
+
 .title-word {
     display: block;
 }
