@@ -488,6 +488,13 @@ a {
     .hero-cover-img {
         width: 300px;
     }
+    .hero-pdf-badge {
+        width: 68px;
+        height: 68px;
+        font-size: 0.45rem;
+        bottom: -14px;
+        left: -22px;
+    }
 }
 
 
