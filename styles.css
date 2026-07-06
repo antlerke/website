@@ -684,6 +684,41 @@ a {
     line-height: 1.8;
 }
 
+/* Card color variants */
+.card-badge--tiffany {
+    color: var(--tiffany);
+    background: rgba(159, 216, 212, 0.12);
+}
+
+.card-badge--rose {
+    color: #C49AAA;
+    background: rgba(214, 188, 198, 0.2);
+}
+
+.card--tiffany {
+    border-color: rgba(159, 216, 212, 0.4);
+}
+
+.card--rose {
+    border-color: rgba(214, 188, 198, 0.4);
+}
+
+/* Guide page thumbnails inside card */
+.card-pages {
+    display: flex;
+    gap: 6px;
+    margin-top: var(--space-md);
+    justify-content: flex-end;
+}
+
+.card-page-img {
+    width: 56px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
 .cards-footer {
     text-align: center;
     font-size: 0.938rem;
