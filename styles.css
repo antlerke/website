@@ -516,6 +516,7 @@ a {
     border: none;
     cursor: pointer;
     text-decoration: none;
+    text-align: center;
 }
 
 .cta-btn-primary {
