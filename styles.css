@@ -1077,6 +1077,9 @@ a {
     margin-bottom: var(--space-lg);
     line-height: 1.2;
     max-width: 900px;
+    padding-bottom: 0.4em;
+    border-bottom: 1px solid var(--tiffany);
+    display: inline-block;
     animation: fadeInUp 0.8s ease-out both;
 }
 
