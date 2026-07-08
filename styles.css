@@ -724,21 +724,21 @@ a {
 }
 
 .card-page-img:nth-child(1) {
-    left: 4px;
+    right: 96px;
     bottom: 0;
     transform: rotate(-2deg);
     z-index: 3;
 }
 
 .card-page-img:nth-child(2) {
-    left: 52px;
+    right: 50px;
     bottom: 22px;
     transform: rotate(1deg);
     z-index: 2;
 }
 
 .card-page-img:nth-child(3) {
-    left: 100px;
+    right: 4px;
     bottom: 44px;
     transform: rotate(4deg);
     z-index: 1;
