@@ -76,6 +76,24 @@
                 text-align: center;
             }
         }
+        @media (min-width: 1024px) {
+            .status-page {
+                padding: 2rem 4rem;
+            }
+            .status-card {
+                max-width: 960px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 6rem;
+                align-items: center;
+            }
+            .status-body {
+                margin-top: 0;
+            }
+            .status-title {
+                font-size: 2rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -92,14 +110,15 @@
     <main>
         <section class="status-page">
             <div class="status-card">
-                <div class="status-icon">
-                    <svg viewBox="0 0 24 24">
-                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                        <line x1="6" y1="6" x2="18" y2="18"></line>
-                    </svg>
+                <div class="status-left">
+                    <div class="status-icon">
+                        <svg viewBox="0 0 24 24">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </div>
+                    <h1 class="status-title">ОПЛАТА НЕ ПРОЙШЛА</h1>
                 </div>
-
-                <h1 class="status-title">ОПЛАТА НЕ ПРОЙШЛА</h1>
 
                 <div class="status-body">
                     <p>На жаль, цього разу щось пішло не так. Але не хвилюйся — це трапляється, і все обов'язково вийде з наступної спроби.</p>

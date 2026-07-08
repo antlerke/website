@@ -66,6 +66,24 @@
         .status-btn-wrap {
             margin-top: var(--space-xl);
         }
+        @media (min-width: 1024px) {
+            .status-page {
+                padding: 2rem 4rem;
+            }
+            .status-card {
+                max-width: 960px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 6rem;
+                align-items: center;
+            }
+            .status-body {
+                margin-top: 0;
+            }
+            .status-title {
+                font-size: 2rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -82,13 +100,14 @@
     <main>
         <section class="status-page">
             <div class="status-card">
-                <div class="status-icon">
-                    <svg viewBox="0 0 24 24">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
+                <div class="status-left">
+                    <div class="status-icon">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <h1 class="status-title">ОПЛАТА ПРОЙШЛА УСПІШНО</h1>
                 </div>
-
-                <h1 class="status-title">ОПЛАТА ПРОЙШЛА УСПІШНО</h1>
 
                 <div class="status-body">
                     <p>Дякуємо! Твій платіж підтверджено — тепер залишився один крок, щоб отримати доступ до гайду.</p>
