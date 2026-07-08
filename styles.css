@@ -707,41 +707,41 @@ a {
     border-color: rgba(214, 188, 198, 0.4);
 }
 
-/* Guide page thumbnails inside card — ascending staircase */
+/* Guide page thumbnails inside card — front-left ascending staircase */
 .card-pages {
     position: relative;
-    height: 122px;
+    height: 150px;
     margin-top: var(--space-md);
 }
 
 .card-page-img {
-    width: 62px;
-    height: 77px;
+    width: 80px;
+    height: 100px;
     object-fit: cover;
-    border-radius: 4px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.18);
+    border-radius: 6px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.18);
     position: absolute;
 }
 
 .card-page-img:nth-child(1) {
-    right: 84px;
+    left: 4px;
     bottom: 0;
-    transform: rotate(-4deg);
-    z-index: 1;
+    transform: rotate(-2deg);
+    z-index: 3;
 }
 
 .card-page-img:nth-child(2) {
-    right: 44px;
-    bottom: 20px;
-    transform: rotate(-1deg);
+    left: 52px;
+    bottom: 22px;
+    transform: rotate(1deg);
     z-index: 2;
 }
 
 .card-page-img:nth-child(3) {
-    right: 4px;
-    bottom: 40px;
-    transform: rotate(2deg);
-    z-index: 3;
+    left: 100px;
+    bottom: 44px;
+    transform: rotate(4deg);
+    z-index: 1;
 }
 
 .cards-footer {
