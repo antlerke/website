@@ -710,13 +710,13 @@ a {
 /* Guide page thumbnails inside card — front-left ascending staircase */
 .card-pages {
     position: relative;
-    height: 150px;
+    height: 173px;
     margin-top: var(--space-md);
 }
 
 .card-page-img {
-    width: 80px;
-    height: 100px;
+    width: 92px;
+    height: 115px;
     object-fit: cover;
     border-radius: 6px;
     box-shadow: 0 4px 14px rgba(0,0,0,0.18);
@@ -724,22 +724,22 @@ a {
 }
 
 .card-page-img:nth-child(1) {
-    right: 96px;
+    right: 110px;
     bottom: 0;
     transform: rotate(-2deg);
     z-index: 3;
 }
 
 .card-page-img:nth-child(2) {
-    right: 50px;
-    bottom: 22px;
+    right: 57px;
+    bottom: 25px;
     transform: rotate(1deg);
     z-index: 2;
 }
 
 .card-page-img:nth-child(3) {
     right: 4px;
-    bottom: 44px;
+    bottom: 51px;
     transform: rotate(4deg);
     z-index: 1;
 }
