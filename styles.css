@@ -901,6 +901,14 @@ a {
 .partner-card--dark {
     background: linear-gradient(135deg, #2C2C2C 0%, #1A1A1A 100%);
 }
+.partner-card--sage {
+    background: linear-gradient(135deg, #E2EDE4 0%, #D6E4D9 100%);
+}
+.partner-card--last {
+    grid-column: 1 / -1;
+    width: calc(50% - var(--space-md) / 2);
+    margin: 0 auto;
+}
 
 .partner-logo-wrap {
     width: 100px;
